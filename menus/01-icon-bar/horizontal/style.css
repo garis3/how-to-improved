@@ -1,0 +1,41 @@
+/* Global */
+:root {
+  --spacer: 1rem;
+  --white: #fff;
+  --white-rgb: 255, 255, 255;
+  --dark: #3e3f3a;
+}
+
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon Bar */
+.icon-bar {
+  display: flex;
+  background-color: var(--dark);
+}
+
+.icon-bar[data-direction="horizontal"] {
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Icon Bar Item */
+.icon-bar-link {
+  flex: 100%;
+  color: rgba(var(--white-rgb), 0.55);
+  padding: calc(0.75 * var(--spacer)) 0;
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.icon-bar-link:is(.active, :hover) {
+  color: #fff;
+}
