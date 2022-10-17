@@ -1,0 +1,26 @@
+/* Global */
+:root {
+  --spacer: 1rem;
+  --dark: #3e3f3a;
+}
+
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu Icon */
+.menu-icon {
+  margin: calc(var(--spacer) * 0.5);
+}
+
+.menu-icon > div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--dark);
+  margin: calc(var(--spacer) * 0.5) 0;
+}
