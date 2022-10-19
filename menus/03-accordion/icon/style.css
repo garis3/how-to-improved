@@ -1,0 +1,93 @@
+/* Global */
+:root {
+  --spacer: 1rem;
+  --light: #f8f5f0;
+  --dark: #3e3f3a;
+}
+
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  --font-family: Cairo;
+  font-family: var(--font-family);
+}
+
+/* Container */
+.container {
+  padding: var(--spacer);
+  width: 450px;
+}
+
+/* Accordion */
+.accordion {
+  --accordion-color: var(--dark);
+  --accordion-border-width: 1px;
+  --accordion-border-color: #dfd7ca;
+  --accordion-btn-font-family: Montserrat;
+  --accordion-btn-bg: var(--light);
+  --accordion-btn-padding-x: calc(1.25 * var(--spacer));
+  --accordion-btn-padding-y: var(--spacer);
+  --accordion-body-padding-x: calc(1.25 * var(--spacer));
+  --accordion-body-padding-y: var(--spacer);
+}
+
+/* Accordion Item */
+.accordion-item {
+  color: var(--accordion-color);
+  border: var(--accordion-border-width) solid var(--accordion-border-color);
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+}
+
+/* Accordion Button */
+.accordion-button {
+  background-color: var(--accordion-btn-bg);
+  cursor: pointer;
+  padding: var(--accordion-btn-padding-y) var(--accordion-btn-padding-x);
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: var(--accordion-btn-font-family);
+  font-size: 1rem;
+  transition: 0.4s;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ebeff3;
+  color: #2d547a;
+  box-shadow: inset 0 calc(-1 * var(--accordion-border-width)) 0
+    var(--accordion-border-color);
+}
+
+.accordion-button::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f078";
+  font-weight: 900;
+  float: right;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "\f077";
+}
+
+/* Accordion Collapse */
+.accordion-collapse .accordion-body {
+  padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
+  max-height: max-content;
+  color: var(--accordion-color);
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+}
+.collapse:not(.show) .accordion-body {
+  max-height: 0;
+  color: transparent;
+  --accordion-body-padding-y: 0;
+}

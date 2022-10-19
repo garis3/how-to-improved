@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Accordion with Icon</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button
+              class="accordion-button"
+              data-toggle="collapse"
+              data-target="#collapse1"
+            >
+              Section 1
+            </button>
+          </div>
+          <div class="accordion-collapse collapse show" id="collapse1">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur aperiam in animi vero quis temporibus tenetur modi
+              reprehenderit nemo quasi amet, repellat accusantium? Nisi, optio.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              data-toggle="collapse"
+              data-target="#collapse2"
+            >
+              Section 2
+            </button>
+          </div>
+          <div class="accordion-collapse collapse" id="collapse2">
+            <div class="accordion-body">
+              Hic sed facere, officiis officia est, dolorum totam dolore nisi
+              quisquam eum ducimus recusandae quibusdam nemo minus voluptatibus
+              aliquid eos, esse alias porro! Sunt, sit?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              data-toggle="collapse"
+              data-target="#collapse3"
+            >
+              Section 3
+            </button>
+          </div>
+          <div class="accordion-collapse collapse" id="collapse3">
+            <div class="accordion-body">
+              Est, vel velit animi nesciunt voluptates, reiciendis odit eaque
+              tempora eligendi sunt quos soluta laudantium eum ratione cumque
+              recusandae nam obcaecati amet quasi repellat! Numquam!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
