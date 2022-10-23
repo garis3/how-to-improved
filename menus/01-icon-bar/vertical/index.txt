@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Icon Bar - Vetical</title>
+  </head>
+
+  <body>
+    <div class="icon-bar" data-direction="vertical">
+      <a class="icon-bar-link active" href="#"
+        ><i class="fa-solid fa-home"></i
+      ></a>
+      <a class="icon-bar-link" href="#"><i class="fa-solid fa-search"></i></a>
+      <a class="icon-bar-link" href="#"><i class="fa-solid fa-play"></i></a>
+      <a class="icon-bar-link" href="#"><i class="fa-solid fa-bell"></i></a>
+      <a class="icon-bar-link" href="#"><i class="fa-solid fa-user"></i></a>
+    </div>
+  </body>
+</html>
