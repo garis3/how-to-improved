@@ -1,0 +1,114 @@
+/* Global */
+:root {
+  --spacer: 1rem;
+  --link-color: #93c54b;
+  --link-hover-color: #769e3c;
+}
+
+/* Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  --font-family: Cairo;
+  font-family: var(--font-family);
+}
+
+.container {
+  margin: var(--spacer);
+}
+
+/* Tabs */
+.nav {
+  --nav-link-padding-x: 0.9rem;
+  --nav-link-padding-y: 0.5rem;
+  --nav-link-font-weight: ;
+  --nav-link-color: var(--link-color);
+  --nav-link-hover-color: var(--link-hover-color);
+  --nav-link-disabled-color: #dfd7ca;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: var(--nav-link-padding-y) var(--nav-link-padding-x);
+  font-size: var(--nav-link-font-size);
+  font-weight: var(--nav-link-font-weight);
+  color: var(--nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.nav-tabs {
+  --nav-taborder-width: 1px;
+  --nav-taborder-color: #dfd7ca;
+  --nav-taborder-radius: 0.375rem;
+  --nav-talink-hover-border-color: #dfd7ca;
+  --nav-talink-active-color: #495057;
+  --nav-talink-active-bg: #fff;
+  --nav-talink-active-border-color: #dfd7ca #dfd7ca #fff;
+  border-bottom: var(--nav-taborder-width) solid var(--nav-taborder-color);
+}
+.nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--nav-taborder-width));
+  background: none;
+  border: var(--nav-taborder-width) solid transparent;
+  border-top-left-radius: var(--nav-taborder-radius);
+  border-top-right-radius: var(--nav-taborder-radius);
+}
+.nav-tabs .nav-link.active {
+  color: var(--nav-talink-active-color);
+  background-color: var(--nav-talink-active-bg);
+  border-color: var(--nav-talink-active-border-color);
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .show {
+  display: block;
+}
+
+.nav-tabs .nav-link {
+  background-color: #f8f5f0;
+  border-color: #dfd7ca;
+}
+.nav-tabs .nav-link,
+.nav-tabs .nav-link:focus {
+  color: #8e8c84;
+}
+
+/* Fade in tabs */
+.fade {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
