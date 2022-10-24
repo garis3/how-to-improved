@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Full-Page Tab</title>
+  </head>
+
+  <body>
+    <div class="nav nav-tabs">
+      <button
+        class="nav-link"
+        id="tab-home"
+        data-toggle="tab"
+        data-target="#home"
+      >
+        Home
+      </button>
+      <button
+        class="nav-link"
+        id="tab-news"
+        data-toggle="tab"
+        data-target="#news"
+      >
+        News
+      </button>
+      <button
+        class="nav-link"
+        id="tab-contact"
+        data-toggle="tab"
+        data-target="#contact"
+      >
+        Contact
+      </button>
+      <button
+        class="nav-link"
+        id="tab-about"
+        data-toggle="tab"
+        data-target="#about"
+      >
+        About
+      </button>
+    </div>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane">
+        <h1 class="text-orange">Home</h1>
+        <p>Home is where the heart is...</p>
+      </div>
+
+      <div id="news" class="tab-pane">
+        <h1 class="text-purple">News</h1>
+        <p>Some news this fine day!</p>
+      </div>
+
+      <div id="contact" class="tab-pane">
+        <h1 class="text-red">Contact</h1>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+
+      <div id="about" class="tab-pane">
+        <h1 class="text-green">About</h1>
+        <p>Who we are and what we do.</p>
+      </div>
+    </div>
+  </body>
+</html>
