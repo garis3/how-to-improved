@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Close Tab</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav nav-tabs">
+        <button
+          class="nav-link"
+          id="tab-london"
+          data-toggle="tab"
+          data-target="#london"
+        >
+          London
+        </button>
+        <button
+          class="nav-link"
+          id="tab-paris"
+          data-toggle="tab"
+          data-target="#paris"
+        >
+          Paris
+        </button>
+        <button
+          class="nav-link"
+          id="tab-tokyo"
+          data-toggle="tab"
+          data-target="#tokyo"
+        >
+          Tokyo
+        </button>
+      </div>
+
+      <div class="tab-content">
+        <div id="london" class="tab-pane fade">
+          <span class="btn-close"></span>
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="paris" class="tab-pane fade">
+          <span class="btn-close"></span>
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="tokyo" class="tab-pane fade">
+          <span class="btn-close"></span>
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
